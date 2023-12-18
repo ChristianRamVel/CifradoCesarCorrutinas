@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
 
             CoroutineScope(Dispatchers.Main).launch {
                 val resultado = encriptador(
-                    textoOriginal.text.toString().lowercase(), numero.text.toString().toInt() * -1
+                    textoOriginal.text.toString().lowercase(), numero.text.toString().toInt() * -1 //se multiplica por -1 para que recorra el array del metodo en sentido contrario
                 )
 
                 textResultado.text = resultado
